@@ -12,7 +12,8 @@ class UfoAppState extends State<UfoApp>{
         title: '打越祭オンライン',
         theme: ThemeData(
             primarySwatch: Colors.blue
-        )
+        ),
+      home:Scaffold()
     );
   }
 }
