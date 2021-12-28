@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './Config.dart';
 
 class UfoApp extends StatefulWidget{
   @override
@@ -6,14 +7,14 @@ class UfoApp extends StatefulWidget{
 }
 
 class UfoAppState extends State<UfoApp>{
+  ThemeData Theme=Config['Theme'];
+  String    Title=Config['Title'];
   @override
   Widget build(BuildContext ctx) {
     return MaterialApp(
-        title: '打越祭オンライン',
-        theme: ThemeData(
-            primarySwatch: Colors.blue
-        ),
-      home:Scaffold()
+        title: Title,
+        theme:Theme,
+        home:Scaffold()
     );
   }
 }
